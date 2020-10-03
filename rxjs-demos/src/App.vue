@@ -17,7 +17,19 @@ export default {
 </script>
 
 <style>
-* {
+#app {
+  background-color: #000000;
+  height: 100vh;
+  width: 100%;
+  display: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+html {
   background-color: #000000;
 }
 </style>

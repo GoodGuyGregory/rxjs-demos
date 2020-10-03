@@ -20,6 +20,8 @@ h2 {
   color: #fff;
   font-family: "Rubik", sans-serif;
   font-size: 36px;
+  margin-right: 15%;
+  flex-basis: 2rem;
 }
 
 img {

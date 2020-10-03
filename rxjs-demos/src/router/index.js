@@ -1,14 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Guide from "../components/Guide.vue";
+import DemoList from "../components/DemoList.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Guide",
-    component: Guide
+    name: "DemoList",
+    component: DemoList
   }
 ];
 
