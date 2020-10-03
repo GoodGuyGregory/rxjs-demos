@@ -1,24 +1,41 @@
 # rxjs-demos
 
-## Project setup
-```
-npm install
-```
+**Observabales**
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+[creating an observable]()
 
-### Compiles and minifies for production
-```
-npm run build
-```
+[subscribing]()
 
-### Lints and fixes files
-```
-npm run lint
-```
+**Subjects**
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+*Subjects* are themselves *Observables* but they also emit data to other data subscribers. the subject will emit further changes to the data source to these observers. Subjects are able to broadcast new changes in data with the `.next()` method and not having to directly rely on a data source.
+
+**RxJs Operators**
+
+[.first() .last()]()
+
+[.catch()]()
+
+[.retry()]()
+
+[.map()]()
+
+[.do()]()
+
+[.filter()]()
+
+[.debounce()]()
+
+[.throttle()]()
+
+[.scan()]()
+
+[.switchMap()]()
+
+[.takeUntil()]()
+
+[.takeWhile()]()
+
+[.zip()]()
+
+[.forkJoin()]()
