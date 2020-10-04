@@ -1,10 +1,16 @@
 <template>
   <div id="Container">
-    <h2>Guides</h2>
+    <h2>Examples</h2>
     <hr />
     <h3>Observables</h3>
     <ul>
-      <li>Creating an Observable</li>
+      <li>
+        <a href class="doc-links">
+          <router-link to="/create-observable">
+            Creating an Observable</router-link
+          >
+        </a>
+      </li>
       <li>Subscribing</li>
     </ul>
     <h3>RxJs Operators</h3>
@@ -48,5 +54,18 @@ export default {
 
 h2 {
   color: #000000;
+}
+
+li {
+  padding: 5px;
+  margin: 7px;
+}
+
+a {
+  color: rgb(94, 13, 225);
+}
+
+a:hover {
+  color: rgb(190, 13, 225);
 }
 </style>

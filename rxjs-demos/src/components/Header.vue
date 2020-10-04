@@ -1,7 +1,9 @@
 <template>
   <div class="header">
     <img alt="rxjs logo" src="../assets/img/reactive-js-logo.png" />
-    <h2>ReactiveX Demos</h2>
+    <router-link :to="{ name: 'DemoList' }"
+      ><h2>ReactiveX Demos</h2></router-link
+    >
   </div>
 </template>
 
@@ -22,7 +24,7 @@ h2 {
   font-size: 36px;
   margin-right: 15%;
   flex-basis: 2rem;
-  padding: 25px;
+  padding: 25px 25px 5px;
 }
 
 img {
