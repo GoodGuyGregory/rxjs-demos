@@ -12,16 +12,16 @@ jobs:
 	runs-on: ubuntu-latest
 	steps:
 		# brings src into the machine: just as if you were working locally...
-	 - uses: actions/checkout@v2
-	 - uses: actions/setup-node@v1
+	 uses: actions/checkout@v2
+	 uses: actions/setup-node@v1
 	       with:
 		   node-version: 12
 		# installs all dependencies
-		 - run: npm install
+		 run: npm install
 		# builds for deployment
-		 - run: npm run build
+		 run: npm run build
 		# checkout gh-pages branch
-		- run: git checkout gh-pages
-		- run: git add dist/ 
-		- run: git commit -m "pushes to ghpages"
-		- run: git push
+		run: git checkout gh-pages
+		run: git add dist/ 
+		run: git commit -m "pushes to ghpages"
+		run: git push
