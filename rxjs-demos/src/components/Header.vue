@@ -22,6 +22,7 @@ h2 {
   font-size: 36px;
   margin-right: 15%;
   flex-basis: 2rem;
+  padding: 25px;
 }
 
 img {
