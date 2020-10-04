@@ -2,20 +2,20 @@ name: deploy-to-ghpages
 
 # on which branch and action to that branch should this workflow occur
 on: 
-	push:
-	   branches: [ master ]
+  push:
+   branches: [ master ]
 
 # dictate jobs to be completed
 jobs:
 
-	build-project:
-		runs-on: ubuntu-latest
-		steps:
+   build-project:
+	runs-on: ubuntu-latest
+	steps:
 		# brings src into the machine: just as if you were working locally...
-		 - uses: actions/checkout@v2
-		 - uses: actions/setup-node@v1
-	           with:
-		     node-version: 12
+	 - uses: actions/checkout@v2
+	 - uses: actions/setup-node@v1
+	       with:
+		   node-version: 12
 		# installs all dependencies
 		 - run: npm install
 		# builds for deployment
